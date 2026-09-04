@@ -1,0 +1,195 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt1
+R1
+R2
+R1
+R0
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R0
+R1
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 dC:/Users/ekatzen/my_designs/Lab_1
+T_opt
+!i145 1
+!i144 0
+!s110 1788513285
+VY[am;SJSaBC6oO9:=XSzW3
+Z4 04 7 4 work lab1_tb fast 0
+=17-8cf8c5f820a0-6a9a8c05-ba-2ec0
+R1
+!s12f OEM25U6 
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+Z7 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc -L iCE40UP
+Z8 tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+Z9 OL;O;2025.2;82
+T_opt1
+!i145 1
+!i144 0
+!s110 1788416557
+VA41zYXNlg`ST4E:;^iUUF2
+R4
+=2-8cf8c5f820a0-6a99122d-227-31d8
+R1
+!s12f OEM25U2 
+R5
+R6
+R7
+o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc
+R8
+n@_opt1
+R9
+R3
+vlab1_EK
+2C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/lab1_EK.sv
+Z10 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z11 !s110 1788509184
+!i10b 1
+!s100 RUCP;gjH_>c3dU:ZbV>UH3
+IaRhH=1Je4NW_6jj]7al0o2
+S1
+R3
+w1788509134
+8C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/lab1_EK.sv
+FC:/Users/ekatzen/my_designs/Lab_1/source/impl_1/lab1_EK.sv
+!i122 24
+L0 9 35
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z14 !s108 1788509184.000000
+!s107 C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/lab1_EK.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/lab1_EK.sv|
+!i113 0
+Z15 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z16 tCvgOpt 0 defaultOptions 1085333592
+nlab1_@e@k
+vlab1_tb
+2C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv
+R10
+!s110 1788513281
+!i10b 1
+!s100 1ib:ilFdbQ=QTP]WB<^Bi2
+IFKn4f9lPOh:aLfSViQhbO3
+S1
+R3
+w1788513276
+8C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv
+FC:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv
+!i122 39
+L0 9 388
+R12
+R13
+r1
+!s85 0
+31
+!s108 1788513281.000000
+!s107 C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv|
+!i113 0
+R15
+R16
+vLEDCounter
+2C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/LEDCounter.sv
+R10
+R11
+!i10b 1
+!s100 D7J6=780bRFg6<9bgjoFb2
+IgE`Z2YjdfRGP:_Mz0E<@23
+S1
+R3
+w1788505758
+8C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/LEDCounter.sv
+FC:/Users/ekatzen/my_designs/Lab_1/source/impl_1/LEDCounter.sv
+!i122 25
+L0 2 25
+R12
+R13
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/LEDCounter.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/LEDCounter.sv|
+!i113 0
+R15
+R16
+n@l@e@d@counter
+vsevenSeg
+2C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv
+R10
+R11
+!i10b 1
+!s100 0gEobQ5:Bo]91cJ[R]e872
+InbU`HkZlEZbY94GFEZNMP1
+S1
+R3
+w1788509139
+8C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv
+FC:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv
+!i122 26
+L0 2 30
+R12
+R13
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv|
+!i113 0
+R15
+R16
+nseven@seg
