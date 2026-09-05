@@ -24,10 +24,10 @@ module lab1_EK(
 		.CLKHF(clk) //Setting clk to be the 24 MHz signal
 	);
 	
-	LEDCounter blink(
+	Counter blink(
 		.clk(clk),
 		.reset(reset),
-		.blinkLED(led[2])
+		.blink(led[2])
 		);
 		
 	//led[0] equates to a XOR of switches 0 and 1
@@ -37,7 +37,7 @@ module lab1_EK(
 	
 	sevenSeg segments(
 		.bitsIn(s),
-		.LEDSeg(seg)
+		.diodeSeg(seg)
 		);
 	
 endmodule	

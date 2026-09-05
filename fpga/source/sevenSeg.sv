@@ -6,7 +6,7 @@
 //		   illuminate a seven segment//		   display based on the input.
 module sevenSeg(
 	input logic [3:0] bitsIn,
-	output logic [6:0] LEDSeg
+	output logic [6:0] diodeSeg
 );
 	//View the input as hex to make it more readable
 	//Each input corresponds with a specific set of segments
@@ -14,23 +14,23 @@ module sevenSeg(
 	always_comb 
 	begin
 		case(bitsIn)
-			4'h0: LEDSeg = ~(7'b0111111);
-			4'h1: LEDSeg = ~(7'b0000110);
-			4'h2: LEDSeg = ~(7'b1011011);
-			4'h3: LEDSeg = ~(7'b1001111);
-			4'h4: LEDSeg = ~(7'b1100110);
-			4'h5: LEDSeg = ~(7'b1101101);
-			4'h6: LEDSeg = ~(7'b1111101);
-			4'h7: LEDSeg = ~(7'b0000111);
-			4'h8: LEDSeg = ~(7'b1111111);
-			4'h9: LEDSeg = ~(7'b1101111);
-			4'hA: LEDSeg = ~(7'b1110111);
-			4'hB: LEDSeg = ~(7'b1111100);
-			4'hC: LEDSeg = ~(7'b0111001);
-			4'hD: LEDSeg = ~(7'b1011110);
-			4'hE: LEDSeg = ~(7'b1111001);
-			4'hF: LEDSeg = ~(7'b1110001);
-			default: LEDSeg = ~(7'b0000000);
+			4'h0: diodeSeg = ~(7'b0111111);
+			4'h1: diodeSeg = ~(7'b0000110);
+			4'h2: diodeSeg = ~(7'b1011011);
+			4'h3: diodeSeg = ~(7'b1001111);
+			4'h4: diodeSeg = ~(7'b1100110);
+			4'h5: diodeSeg = ~(7'b1101101);
+			4'h6: diodeSeg = ~(7'b1111101);
+			4'h7: diodeSeg = ~(7'b0000111);
+			4'h8: diodeSeg = ~(7'b1111111);
+			4'h9: diodeSeg = ~(7'b1101111);
+			4'hA: diodeSeg = ~(7'b1110111);
+			4'hB: diodeSeg = ~(7'b1111100);
+			4'hC: diodeSeg = ~(7'b0111001);
+			4'hD: diodeSeg = ~(7'b1011110);
+			4'hE: diodeSeg = ~(7'b1111001);
+			4'hF: diodeSeg = ~(7'b1110001);
+			default: diodeSeg = ~(7'b0000000);
 		endcase
 	end
 endmodule
