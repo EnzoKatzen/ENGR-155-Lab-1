@@ -4,6 +4,7 @@ module counter_tb();
 	
 	logic reset; //active low reset
 	logic clk;	//clk for sim
+	logic enable;	//Enable for testing
 	logic blink;		//1 output LED
 	
 	Counter #(
@@ -12,6 +13,7 @@ module counter_tb();
 	) testCounter (
 		.reset(reset),
 		.clk(clk),
+		.enable(enable),
 		.blink(blink)
 	);
 	
@@ -21,15 +23,24 @@ module counter_tb();
 	end
 	
 	initial begin
-	//counter test 1 - confirming reset
+	//counter test 1 - confirming enable off
 		reset = 0;
-		#10 reset = 1;
+		#10; reset = 1;
+		enable = 0;
+		#10;
+		#10;
+		#10;
+		#10;
+		#10;
+		#10;
+		#10;
 		assert (blink == 0)
             $display("PASSED! The counter submodule behaves as desired at time: %0t.", $time);
         else 
             $error("FAILED! The counter submodule behaves incorrectly at time: %0t.", $time);
 	
-	//counter test 1 - confirming enable
+	//counter test 1 - confirming enable on.
+		enable = 1;
 		#10;
 		#10;
 		#10;
@@ -37,7 +48,7 @@ module counter_tb();
 		#10;
 		#10;
 		#10;
-
+		#10
 		assert (blink == 1)
             $display("PASSED! The counter submodule behaves as desired at time: %0t.", $time);
         else 

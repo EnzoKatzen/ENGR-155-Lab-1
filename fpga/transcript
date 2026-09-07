@@ -13,183 +13,53 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:03:34 on Sep 04,2026
-# vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module toplevel_tb
-# 
-# Top level modules:
-# 	toplevel_tb
-# End time: 18:03:34 on Sep 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:04:13 on Sep 04,2026
-# vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module toplevel_tb
-# 
-# Top level modules:
-# 	toplevel_tb
-# End time: 18:04:13 on Sep 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -gui work.toplevel_tb {-voptargs=+acc -L iCE40UP}
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -gui work.toplevel_tb -voptargs="+acc -L iCE40UP" 
-# Start time: 18:05:16 on Sep 04,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.toplevel_tb(fast)
-# Loading work.lab1_EK(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.LEDCounter(fast)
-# Loading work.sevenSeg(fast)
-add wave -position insertpoint  \
-sim:/toplevel_tb/dut/clk \
-sim:/toplevel_tb/dut/led \
-{sim:/toplevel_tb/dut/led[2]} \
-{sim:/toplevel_tb/dut/led[1]} \
-{sim:/toplevel_tb/dut/led[0]}
-run 100ns
-# PASSED! The HSOSC generated clk behaves as desired at time: 42000.
-# PASSED! The HSOSC generated clk behaves as desired at time: 63000.
-run 100ns
-# PASSED! The led controller behaves as desired at time: 125000.
-# PASSED! The led controller behaves as desired at time: 167000.
-run 100ns
-# PASSED! The led controller behaves as desired at time: 208000.
-# PASSED! The led controller behaves as desired at time: 250000.
-# PASSED! The led controller behaves as desired at time: 292000.
-run 100ns
-# PASSED! The led controller behaves as desired at time: 333000.
-# PASSED! The led controller behaves as desired at time: 375000.
-run 100ns
-# PASSED! The led controller behaves as desired at time: 417000.
-# PASSED! The led controller behaves as desired at time: 458000.
-run 100ns
-# PASSED! The led controller behaves as desired at time: 500000.
-run 100ns
-run 100ns
-run 100ns
-run 100ns
-# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv(126)
-#    Time: 916730 ps  Iteration: 0  Instance: /toplevel_tb
-# Break in Module toplevel_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv line 126
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.toplevel_tb(fast)
-# Loading work.lab1_EK(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.LEDCounter(fast)
-# Loading work.sevenSeg(fast)
-run 1000ns
-# PASSED! The HSOSC generated clk behaves as desired at time: 42000.
-# PASSED! The HSOSC generated clk behaves as desired at time: 63000.
-# PASSED! The led controller behaves as desired at time: 125000.
-# PASSED! The led controller behaves as desired at time: 167000.
-# PASSED! The led controller behaves as desired at time: 208000.
-# PASSED! The led controller behaves as desired at time: 250000.
-# PASSED! The led controller behaves as desired at time: 292000.
-# PASSED! The led controller behaves as desired at time: 333000.
-# PASSED! The led controller behaves as desired at time: 375000.
-# PASSED! The led controller behaves as desired at time: 417000.
-# PASSED! The led controller behaves as desired at time: 458000.
-# PASSED! The led controller behaves as desired at time: 500000.
-# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv(126)
-#    Time: 916730 ps  Iteration: 0  Instance: /toplevel_tb
-# Break in Module toplevel_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv line 126
-quit -sim
-# End time: 18:14:57 on Sep 04,2026, Elapsed time: 0:09:41
-# Errors: 0, Warnings: 1
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:15:06 on Sep 04,2026
+# Start time: 20:14:08 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module counter_tb
 # 
 # Top level modules:
 # 	counter_tb
-# End time: 18:15:06 on Sep 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -gui {-voptargs=+acc -L iCE40UP} work.counter_tb
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -gui -voptargs="+acc -L iCE40UP" work.counter_tb 
-# Start time: 18:16:54 on Sep 04,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qpg".
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qtl".
-# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
-# ** Warning: (vopt-133) Unable to remove directory "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt".
-# ** Error: C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv(12): Module 'Counter' is not defined.
-#  For instance 'testCounter' at path 'counter_tb'
-# Optimization failed
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qpg".
-# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qtl".
-# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
-# ** Warning: (vopt-133) Unable to remove directory "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt".
-# The directory is not empty. (GetLastError() = 145)
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=7.
-# Error loading design
-# End time: 18:16:55 on Sep 04,2026, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 7
-vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:17:22 on Sep 04,2026
-# vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module counter_tb
-# 
-# Top level modules:
-# 	counter_tb
-# End time: 18:17:22 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:14:08 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/lab1_EK.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:17:23 on Sep 04,2026
+# Start time: 20:14:08 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/lab1_EK.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module lab1_EK
 # 
 # Top level modules:
 # 	lab1_EK
-# End time: 18:17:23 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:14:08 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/LEDCounter.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:17:23 on Sep 04,2026
+# Start time: 20:14:08 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/LEDCounter.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module Counter
 # 
 # Top level modules:
 # 	Counter
-# End time: 18:17:23 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:14:08 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/segment_tb.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:17:23 on Sep 04,2026
+# Start time: 20:14:08 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/segment_tb.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module segment_tb
 # 
 # Top level modules:
 # 	segment_tb
-# End time: 18:17:23 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:14:09 on Sep 06,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:17:23 on Sep 04,2026
+# Start time: 20:14:09 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # ** Warning: (vlog-2083) C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv(6): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -197,147 +67,121 @@ vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/imp
 # 
 # Top level modules:
 # 	sevenSeg
-# End time: 18:17:23 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:14:09 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:17:23 on Sep 04,2026
+# Start time: 20:14:09 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module toplevel_tb
 # 
 # Top level modules:
 # 	toplevel_tb
-# End time: 18:17:23 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:14:09 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:17:23 on Sep 04,2026
+# Start time: 20:14:09 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module top_to_counter_tb
 # 
 # Top level modules:
 # 	top_to_counter_tb
-# End time: 18:17:23 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:14:09 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_segment_tb.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:17:23 on Sep 04,2026
+# Start time: 20:14:09 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_segment_tb.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module top_to_segment_tb
 # 
 # Top level modules:
 # 	top_to_segment_tb
-# End time: 18:17:23 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:14:09 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim -gui {-voptargs=+acc -L iCE40UP} work.counter_tb
+vsim -gui work.counter_tb {-voptargs=+acc -L iCE40UP}
 # ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -gui -voptargs="+acc -L iCE40UP" work.counter_tb 
-# Start time: 18:17:37 on Sep 04,2026
+# vsim -gui work.counter_tb -voptargs="+acc -L iCE40UP" 
+# Start time: 20:14:30 on Sep 06,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading sv_std.std
+# Loading work.counter_tb(fast)
+# Loading work.Counter(fast)
+run 100ns
+# PASSED! The counter submodule behaves as desired at time: 8000.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.counter_tb(fast)
 # Loading work.Counter(fast)
 add wave -position insertpoint  \
 sim:/counter_tb/reset \
 sim:/counter_tb/clk \
+sim:/counter_tb/enable \
 sim:/counter_tb/blink
-run 100 ns
-# PASSED! The counter submodule behaves as desired at time: 1000.
+run 1000ns
 # PASSED! The counter submodule behaves as desired at time: 8000.
-run 100 ns
-# PASSED! The counter submodule behaves as desired at time: 16000.
-run 100 ns
-# PASSED! The counter submodule behaves as desired at time: 26000.
-run 100 ns
-# ** Error: FAILED! The counter submodule behaves incorrectly at time: 33000.
-#    Time: 330 ns  Scope: counter_tb File: C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv Line: 91
+# PASSED! The counter submodule behaves as desired at time: 15000.
+# PASSED! The counter submodule behaves as desired at time: 23000.
+# PASSED! The counter submodule behaves as desired at time: 33000.
+# PASSED! The counter submodule behaves as desired at time: 41000.
+# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv(103)
+#    Time: 460 ns  Iteration: 0  Instance: /counter_tb
+# Break in Module counter_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv line 103
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:21:08 on Sep 04,2026
+# Start time: 20:16:35 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module counter_tb
 # 
 # Top level modules:
 # 	counter_tb
-# End time: 18:21:08 on Sep 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.counter_tb(fast)
-# Loading work.Counter(fast)
-run 100ns
-# PASSED! The counter submodule behaves as desired at time: 1000.
-# PASSED! The counter submodule behaves as desired at time: 8000.
-run 100ns
-# PASSED! The counter submodule behaves as desired at time: 16000.
-run 100ns
-# PASSED! The counter submodule behaves as desired at time: 26000.
-run 100ns
-# PASSED! The counter submodule behaves as desired at time: 34000.
-run 100ns
-run 100ns
-run 100ns
-run 100ns
-run 100ns
-vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:22:59 on Sep 04,2026
-# vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module counter_tb
-# 
-# Top level modules:
-# 	counter_tb
-# End time: 18:22:59 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:16:35 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/lab1_EK.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:22:59 on Sep 04,2026
+# Start time: 20:16:36 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/lab1_EK.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module lab1_EK
 # 
 # Top level modules:
 # 	lab1_EK
-# End time: 18:22:59 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:16:36 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/LEDCounter.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:22:59 on Sep 04,2026
+# Start time: 20:16:36 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/LEDCounter.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module Counter
 # 
 # Top level modules:
 # 	Counter
-# End time: 18:22:59 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:16:36 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/segment_tb.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:22:59 on Sep 04,2026
+# Start time: 20:16:36 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/segment_tb.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module segment_tb
 # 
 # Top level modules:
 # 	segment_tb
-# End time: 18:22:59 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:16:36 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:22:59 on Sep 04,2026
+# Start time: 20:16:36 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # ** Warning: (vlog-2083) C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv(6): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -345,40 +189,40 @@ vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/imp
 # 
 # Top level modules:
 # 	sevenSeg
-# End time: 18:22:59 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:16:36 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:22:59 on Sep 04,2026
+# Start time: 20:16:36 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/testbench.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module toplevel_tb
 # 
 # Top level modules:
 # 	toplevel_tb
-# End time: 18:22:59 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:16:36 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:22:59 on Sep 04,2026
+# Start time: 20:16:36 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module top_to_counter_tb
 # 
 # Top level modules:
 # 	top_to_counter_tb
-# End time: 18:22:59 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:16:36 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_segment_tb.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:23:00 on Sep 04,2026
+# Start time: 20:16:37 on Sep 06,2026
 # vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_segment_tb.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module top_to_segment_tb
 # 
 # Top level modules:
 # 	top_to_segment_tb
-# End time: 18:23:00 on Sep 04,2026, Elapsed time: 0:00:00
+# End time: 20:16:37 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -390,280 +234,44 @@ restart -f
 # Loading work.counter_tb(fast)
 # Loading work.Counter(fast)
 run 1000ns
-# PASSED! The counter submodule behaves as desired at time: 1000.
+# PASSED! The counter submodule behaves as desired at time: 8000.
+# ** Error: FAILED! The counter submodule behaves incorrectly at time: 15000.
+#    Time: 150 ns  Scope: counter_tb File: C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv Line: 54
+# ** Error: FAILED! The counter submodule behaves incorrectly at time: 23000.
+#    Time: 230 ns  Scope: counter_tb File: C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv Line: 69
+# PASSED! The counter submodule behaves as desired at time: 33000.
+# PASSED! The counter submodule behaves as desired at time: 41000.
+# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv(103)
+#    Time: 460 ns  Iteration: 0  Instance: /counter_tb
+# Break in Module counter_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv line 103
+vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 20:17:48 on Sep 06,2026
+# vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module counter_tb
+# 
+# Top level modules:
+# 	counter_tb
+# End time: 20:17:48 on Sep 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.counter_tb(fast)
+# Loading work.Counter(fast)
+run 1000ns
 # PASSED! The counter submodule behaves as desired at time: 8000.
 # PASSED! The counter submodule behaves as desired at time: 16000.
-# PASSED! The counter submodule behaves as desired at time: 26000.
+# PASSED! The counter submodule behaves as desired at time: 24000.
 # PASSED! The counter submodule behaves as desired at time: 34000.
-# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv(93)
-#    Time: 390 ns  Iteration: 0  Instance: /counter_tb
-# Break in Module counter_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv line 93
-quit -sim
-# End time: 18:24:23 on Sep 04,2026, Elapsed time: 0:06:46
+# PASSED! The counter submodule behaves as desired at time: 42000.
+# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv(104)
+#    Time: 470 ns  Iteration: 0  Instance: /counter_tb
+# Break in Module counter_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/counter_tb.sv line 104
+# End time: 20:20:05 on Sep 06,2026, Elapsed time: 0:05:35
 # Errors: 0, Warnings: 1
-vsim -gui {-voptargs=+acc -L iCE40UP} work.segment_tb
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -gui -voptargs="+acc -L iCE40UP" work.segment_tb 
-# Start time: 18:24:42 on Sep 04,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qpg".
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qtl".
-# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
-# ** Warning: (vopt-133) Unable to remove directory "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt".
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
-# Loading sv_std.std
-# Loading work.segment_tb(fast)
-# Loading work.sevenSeg(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (5) for port 'bitsIn'. The port definition is at: C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv(8).
-#    Time: 0 ps  Iteration: 0  Instance: /segment_tb/segments File: C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/segment_tb.sv Line: 7
-vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:26:03 on Sep 04,2026
-# vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Warning: (vlog-2083) C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/sevenSeg.sv(6): Carriage return (0x0D) is not followed by a newline (0x0A).
-# -- Compiling module sevenSeg
-# 
-# Top level modules:
-# 	sevenSeg
-# End time: 18:26:03 on Sep 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/segment_tb.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:26:26 on Sep 04,2026
-# vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/segment_tb.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module segment_tb
-# 
-# Top level modules:
-# 	segment_tb
-# End time: 18:26:26 on Sep 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.segment_tb(fast)
-# Loading work.sevenSeg(fast)
-add wave -position insertpoint  \
-sim:/segment_tb/bitsIn
-add wave -position insertpoint  \
-sim:/segment_tb/diodeSeg
-run 1000ns
-# PASSED! The seven segment display controller behaves as desired at time: 4200.
-# PASSED! The seven segment display controller behaves as desired at time: 8300.
-# PASSED! The seven segment display controller behaves as desired at time: 12500.
-# PASSED! The seven segment display controller behaves as desired at time: 16700.
-# PASSED! The seven segment display controller behaves as desired at time: 20800.
-# PASSED! The seven segment display controller behaves as desired at time: 25000.
-# PASSED! The seven segment display controller behaves as desired at time: 29200.
-# PASSED! The seven segment display controller behaves as desired at time: 33300.
-# PASSED! The seven segment display controller behaves as desired at time: 37500.
-# PASSED! The seven segment display controller behaves as desired at time: 41700.
-# PASSED! The seven segment display controller behaves as desired at time: 45800.
-# PASSED! The seven segment display controller behaves as desired at time: 50000.
-# PASSED! The seven segment display controller behaves as desired at time: 54200.
-# PASSED! The seven segment display controller behaves as desired at time: 58300.
-# PASSED! The seven segment display controller behaves as desired at time: 62500.
-# PASSED! The seven segment display controller behaves as desired at time: 66700.
-run 1000ns
-# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/segment_tb.sv(141)
-#    Time: 1083420 ps  Iteration: 0  Instance: /segment_tb
-# Break in Module segment_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/segment_tb.sv line 141
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.segment_tb(fast)
-# Loading work.sevenSeg(fast)
-run 2000ns
-# PASSED! The seven segment display controller behaves as desired at time: 4200.
-# PASSED! The seven segment display controller behaves as desired at time: 8300.
-# PASSED! The seven segment display controller behaves as desired at time: 12500.
-# PASSED! The seven segment display controller behaves as desired at time: 16700.
-# PASSED! The seven segment display controller behaves as desired at time: 20800.
-# PASSED! The seven segment display controller behaves as desired at time: 25000.
-# PASSED! The seven segment display controller behaves as desired at time: 29200.
-# PASSED! The seven segment display controller behaves as desired at time: 33300.
-# PASSED! The seven segment display controller behaves as desired at time: 37500.
-# PASSED! The seven segment display controller behaves as desired at time: 41700.
-# PASSED! The seven segment display controller behaves as desired at time: 45800.
-# PASSED! The seven segment display controller behaves as desired at time: 50000.
-# PASSED! The seven segment display controller behaves as desired at time: 54200.
-# PASSED! The seven segment display controller behaves as desired at time: 58300.
-# PASSED! The seven segment display controller behaves as desired at time: 62500.
-# PASSED! The seven segment display controller behaves as desired at time: 66700.
-# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/segment_tb.sv(141)
-#    Time: 1083420 ps  Iteration: 0  Instance: /segment_tb
-# Break in Module segment_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/segment_tb.sv line 141
-quit -sim
-# End time: 18:29:04 on Sep 04,2026, Elapsed time: 0:04:22
-# Errors: 0, Warnings: 1
-vsim -gui {-voptargs=+acc -L iCE40UP} work.top_to_counter_tb
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -gui -voptargs="+acc -L iCE40UP" work.top_to_counter_tb 
-# Start time: 18:29:28 on Sep 04,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qpg".
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qtl".
-# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
-# ** Warning: (vopt-133) Unable to remove directory "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt".
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
-# Loading sv_std.std
-# Loading work.top_to_counter_tb(fast)
-# Loading work.lab1_EK(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.Counter(fast)
-# Loading work.sevenSeg(fast)
-add wave -position insertpoint  \
-sim:/top_to_counter_tb/clk
-add wave -position insertpoint  \
-sim:/top_to_counter_tb/led
-run 500ms
-# PASSED! The counter submodule connection behaves as desired at time: 208333376000.
-# PASSED! The counter submodule connection behaves as desired at time: 416666710000.
-# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv(36)
-#    Time: 416667126370 ps  Iteration: 0  Instance: /top_to_counter_tb
-# Break in Module top_to_counter_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv line 36
-vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 18:34:03 on Sep 04,2026
-# vlog -reportprogress 300 -work work C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module top_to_counter_tb
-# 
-# Top level modules:
-# 	top_to_counter_tb
-# End time: 18:34:03 on Sep 04,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.top_to_counter_tb(fast)
-# Loading work.lab1_EK(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.Counter(fast)
-# Loading work.sevenSeg(fast)
-run 800ms
-# PASSED! The counter submodule connection behaves as desired at time: 208333376000.
-# PASSED! The counter submodule connection behaves as desired at time: 416666710000.
-# PASSED! The counter submodule connection behaves as desired at time: 666666751000.
-# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv(45)
-#    Time: 766666751340 ps  Iteration: 0  Instance: /top_to_counter_tb
-# Break in Module top_to_counter_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv line 45
-quit -sim
-# End time: 18:37:51 on Sep 04,2026, Elapsed time: 0:08:23
-# Errors: 0, Warnings: 1
-vsim -gui {-voptargs=+acc -L iCE40UP} work.top_to_segment_tb
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -gui -voptargs="+acc -L iCE40UP" work.top_to_segment_tb 
-# Start time: 18:40:28 on Sep 04,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qpg".
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qtl".
-# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
-# ** Warning: (vopt-133) Unable to remove directory "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt".
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
-# Loading sv_std.std
-# Loading work.top_to_segment_tb(fast)
-# Loading work.lab1_EK(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.Counter(fast)
-# Loading work.sevenSeg(fast)
-add wave -position insertpoint  \
-sim:/top_to_segment_tb/s
-add wave -position insertpoint  \
-sim:/top_to_segment_tb/seg
-run 2000ns
-# PASSED! The seven segment top module connection behaves as desired at time: 83000.
-# PASSED! The seven segment top module connection behaves as desired at time: 125000.
-# PASSED! The seven segment top module connection behaves as desired at time: 167000.
-# PASSED! The seven segment top module connection behaves as desired at time: 208000.
-# PASSED! The seven segment top module connection behaves as desired at time: 250000.
-# PASSED! The seven segment top module connection behaves as desired at time: 292000.
-# PASSED! The seven segment top module connection behaves as desired at time: 333000.
-# PASSED! The seven segment top module connection behaves as desired at time: 375000.
-# PASSED! The seven segment top module connection behaves as desired at time: 417000.
-# PASSED! The seven segment top module connection behaves as desired at time: 458000.
-# PASSED! The seven segment top module connection behaves as desired at time: 500000.
-# PASSED! The seven segment top module connection behaves as desired at time: 542000.
-# PASSED! The seven segment top module connection behaves as desired at time: 583000.
-# PASSED! The seven segment top module connection behaves as desired at time: 625000.
-# PASSED! The seven segment top module connection behaves as desired at time: 667000.
-# PASSED! The seven segment top module connection behaves as desired at time: 708000.
-# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_segment_tb.sv(151)
-#    Time: 1125090 ps  Iteration: 0  Instance: /top_to_segment_tb
-# Break in Module top_to_segment_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_segment_tb.sv line 151
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
-# Loading work.top_to_segment_tb(fast)
-# Loading work.lab1_EK(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.Counter(fast)
-# Loading work.sevenSeg(fast)
-run 1000ns
-# PASSED! The seven segment top module connection behaves as desired at time: 83000.
-# PASSED! The seven segment top module connection behaves as desired at time: 125000.
-# PASSED! The seven segment top module connection behaves as desired at time: 167000.
-# PASSED! The seven segment top module connection behaves as desired at time: 208000.
-# PASSED! The seven segment top module connection behaves as desired at time: 250000.
-# PASSED! The seven segment top module connection behaves as desired at time: 292000.
-# PASSED! The seven segment top module connection behaves as desired at time: 333000.
-# PASSED! The seven segment top module connection behaves as desired at time: 375000.
-# PASSED! The seven segment top module connection behaves as desired at time: 417000.
-# PASSED! The seven segment top module connection behaves as desired at time: 458000.
-# PASSED! The seven segment top module connection behaves as desired at time: 500000.
-# PASSED! The seven segment top module connection behaves as desired at time: 542000.
-# PASSED! The seven segment top module connection behaves as desired at time: 583000.
-# PASSED! The seven segment top module connection behaves as desired at time: 625000.
-# PASSED! The seven segment top module connection behaves as desired at time: 667000.
-# PASSED! The seven segment top module connection behaves as desired at time: 708000.
-quit -sim
-# End time: 18:44:13 on Sep 04,2026, Elapsed time: 0:03:45
-# Errors: 0, Warnings: 4
-vsim -gui {-voptargs=+acc -L iCE40UP} work.top_to_counter_tb
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -gui -voptargs="+acc -L iCE40UP" work.top_to_counter_tb 
-# Start time: 18:44:25 on Sep 04,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qpg".
-# ** Warning: (vopt-31) Unable to unlink file "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt/_lib3_0.qtl".
-# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
-# ** Warning: (vopt-133) Unable to remove directory "C:/Users/ekatzen/my_designs/Lab_1/work/@_opt".
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
-# Loading sv_std.std
-# Loading work.top_to_counter_tb(fast)
-# Loading work.lab1_EK(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.Counter(fast)
-# Loading work.sevenSeg(fast)
-add wave -position insertpoint  \
-sim:/top_to_counter_tb/clk
-add wave -position insertpoint  \
-sim:/top_to_counter_tb/led
-run 800ms
-# PASSED! The counter submodule connection behaves as desired at time: 208333376000.
-# PASSED! The counter submodule connection behaves as desired at time: 416666710000.
-# PASSED! The counter submodule connection behaves as desired at time: 666666751000.
-# ** Note: $stop    : C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv(45)
-#    Time: 766666751340 ps  Iteration: 0  Instance: /top_to_counter_tb
-# Break in Module top_to_counter_tb at C:/Users/ekatzen/my_designs/Lab_1/source/impl_1/top_to_counter_tb.sv line 45
-# End time: 18:49:34 on Sep 04,2026, Elapsed time: 0:05:09
-# Errors: 0, Warnings: 4

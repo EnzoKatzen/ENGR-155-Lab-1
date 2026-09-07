@@ -9,6 +9,7 @@ module Counter #(
 )(
 	input logic reset,
 	input logic clk,
+	input logic enable,
 	output logic blink
 );
 	logic [WIDTH-1:0] counter = 1'b0;
@@ -21,10 +22,13 @@ module Counter #(
 			blink <= 1'b0;
 		end 
 		else if (counter >= MAX) 
-		begin
+		begin			
 			counter  <= 1'b0;
 			blink <= ~blink; 
 		end 
-		else counter  <= counter + 1;
+		else 
+		begin
+			if(enable) counter  <= counter + 1;
+		end
 	end
 endmodule

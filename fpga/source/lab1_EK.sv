@@ -27,6 +27,7 @@ module lab1_EK(
 	Counter blink(
 		.clk(clk),
 		.reset(reset),
+		.enable(1),
 		.blink(led[2])
 		);
 		
